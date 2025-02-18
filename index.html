@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jessie Evans - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Jessie Evans</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,49 +23,72 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p> I'm Jessie Evans, currently pursuing Computer Science Engineering specialsation in Artificial Intellignece and Machine Learning at Vignan's Lara Institute of Technology and Science. Experienced python developer. Knowledgeable in project management. Equipped with a 
-            diverse and promising skill-set. Proficient in an assortment of technologies, including Java, 
-            MY SQL DBMS, Python and Data structures with C. Able to effectively self-manage during 
-            independent projects, as well as collaborate and lead in a team setting. Enthusiastic learner to learn through new experiences.</p>
+        <p>I'm Jessie Evans, currently pursuing Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning at Vignan's Lara Institute of Technology and Science. I'm an experienced Python developer with knowledge in project management and a diverse skill set. Proficient in Java, MySQL, Python, and Data Structures with C, I thrive in both independent and team settings. I'm always eager to learn through new experiences.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>QR based attendance System  </h3>
-            <p> Automatic Qr code attendance system: It scans Qr code on the shirt of students and 
-                automatically store the attendance data in a database</p>
-            <a href="https://github.com/jessie-evans/qr_code-based-attendance-">View Project</a>
+            <h3>QR-Based Attendance System</h3>
+            <p>An automatic QR code attendance system that scans QR codes on students' shirts and stores attendance data in a database.</p>
+            <a href="https://github.com/jessie-evans/qr_code-based-attendance-" target="_blank">View Project</a>
         </div>
         <div class="project">
-            <h3>My personal Portfolio </h3>
-            <p> This webpage has information about me in detail</p>
-            <a href="https://github.com/jessie-evans/Portfolio">View Project</a>
+            <h3>Personal Portfolio</h3>
+            <p>This webpage showcases my skills, projects, and contact information.</p>
+            <a href="https://github.com/jessie-evans/Portfolio" target="_blank">View Project</a>
         </div>
-        <!-- Add more projects as needed -->
     </section>
 
     <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>MYSQL</li>
-            <li>JAVA</li>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>MySQL</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Professional Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                    <li>Leadership</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Linguistic Skills</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <h2>Professional Skills</h2>
-        <ul>
-            <li>Communication</li>
-            <li>Adaptability</li>
-            <li>Leadership qualities</li>
-            <li>Problem Solving</li>
-            <li>Creative and Innovative Thinking</li>
-        
-        <h2>Linguistic skills</h2>
-        <ul>
-            <li>English</li>
-            <li>Hindi</li> 
-        </ul>
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="path/to/your/image1.jpg" alt="Event Participation">
+                <p>Event Participation</p>
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/your/image2.jpg" alt="Certificate Presentation">
+                <p>Certificate Presentation</p>
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/your/image3.jpg" alt="Meeting with Important People">
+                <p>Meeting with Important People</p>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
     </section>
 
     <section id="contact">
@@ -71,24 +96,26 @@
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
         </form>
-        <p>Or reach me at: <a href="jessienani21@gmail.com">jessienani21@gmail.com</a></p>
-        <p>Connect with me on social media:  
-            <a href=" www.linkedin.com/in/jessie-nani-949171296">LinkedIn</a>
-        </p>
-        <p>My github: <a href="https://github.com/jessie-evans">github</a> </p>
+        <div class="social-links">
+            <p>Or reach me at: <a href="mailto:jessienani21@gmail.com">jessienani21@gmail.com</a></p>
+            <p>Connect with me on: 
+                <a href="https://www.linkedin.com/in/jessie-nani-949171296" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/jessie-evans" target="_blank">GitHub</a>
+            </p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 My Portfolio</p>
+        <p>&copy; 2023 Jessie Evans. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
